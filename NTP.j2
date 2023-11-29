@@ -4,6 +4,5 @@ ntp source {{ config_context["source-int"] }}
 ntp server {{ server['ip'] }} prefer
 {% else %}
 ntp server {{ server['ip'] }}
-nto to
 {% endif %}
 {% endfor %}
